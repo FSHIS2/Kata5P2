@@ -1,20 +1,20 @@
-package kata4.controller;
+package kata5.controller;
 
 import java.io.FileNotFoundException;
  import java.io.IOException;
  import java.util.List;
- import kata4.model.Histogram;
- import kata4.model.Mail;
- import kata4.view.HistogramDisplay;
- import kata4.view.MailHistogramBuilder;
-import kata4.view.MailListReader;
+ import kata5.model.Histogram;
+ import kata5.model.Mail;
+ import kata5.view.HistogramDisplay;
+ import kata5.view.MailHistogramBuilder;
+import kata5.view.MailListReader;
 
-public class Kata4 {
+public class Kata5 {
     private List<Mail> list;
     private Histogram histogram;
 
     public static void main(String[] args) throws IOException {
-        Kata4 k = new Kata4();
+        Kata5 k = new Kata5();
         k.execute();
         /*MailListReader lista = new MailListReader();
         MailHistogramBuilder histo = new MailHistogramBuilder();
@@ -42,5 +42,4 @@ public class Kata4 {
     private void output() {
         new HistogramDisplay(histogram).execute();
     }
-
 }

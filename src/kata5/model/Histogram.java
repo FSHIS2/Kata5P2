@@ -1,4 +1,4 @@
-package kata4.model;
+package kata5.model;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -38,5 +38,5 @@ public class Histogram <T> {
     }
     public void increment(T key){
         map.put(key, map.containsKey(key) ? map.get(key)+1 : 1);
-    } 
+    }
 }

@@ -1,8 +1,8 @@
-package kata4.view;
+package kata5.view;
 
 import java.awt.Dimension;
 import javax.swing.JPanel;
-import kata4.model.Histogram;
+import kata5.model.Histogram;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -47,7 +47,6 @@ public class HistogramDisplay extends ApplicationFrame {
             dataset.addValue(histogram.get(key), "", (Comparable) key);
         });
         return dataset;
-    }
-    
+    }  
 }
 

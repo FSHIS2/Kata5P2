@@ -1,4 +1,4 @@
-package kata4.model;
+package kata5.model;
 
 public class Mail{
     private final String mail;
@@ -18,6 +18,5 @@ public class Mail{
             return "email incorrecto";
         }
         return domain;
-    }
-    
+    }  
 }

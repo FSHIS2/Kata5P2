@@ -2,14 +2,20 @@ package kata5.view;
 
 import java.util.List;
 import kata5.model.Histogram;
-import kata5.model.Mail;
 
 public class MailHistogramBuilder {
-        public Histogram<String> build(List<Mail> list) {
+        public Histogram<String> build(List<String> list) {
         Histogram<String> histogram = new Histogram<>();
-
-        for (Mail email : list) {
-            histogram.increment(email.getDomain());
+        String domain = "";
+        for (String email : list) {
+            if(email.contains("@")){
+            for(int i = 0; i < email.length(); i++){
+                if(email.charAt(i) == '@'){
+                    domain = email.substring(i+1, email.length());
+                }
+            }
+        }
+            histogram.increment(domain);
         }
         return histogram;
     }   
